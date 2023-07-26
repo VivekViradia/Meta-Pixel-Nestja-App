@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { gtmEvent } from "../../gtm-lib/gtm";
 
 const Header = () => {
   return (
@@ -31,6 +32,14 @@ const Header = () => {
                         <a
                           href='../productPage'
                           className='relative text-[12px] xl:text-[14px] mt-[5px] xl:ml-[10px] xl:mr-[10px] ml-[5px] mr-[5px] tracking-[1px] z-10 flex items-center font-[600] border-0 border-b-2 pt-[10px] pb-[10px] border-transparent hover:border-primary-hover text-primary hover:text-primary-hover'
+                          onClick={() =>
+                            gtmEvent({
+                              action: "Product-Listing",
+                              params: {
+                                search_term: "test",
+                              },
+                            })
+                          }
                         >
                           <span className='uppercase'>Product Listing</span>
                         </a>

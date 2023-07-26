@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ProductData from "../../../Data/ProductData.json";
+import { useCart } from "../../../../contexts/cartContext";
 
 const ProductItem = ({ params }) => {
   console.log("ProductData, Page", ProductData);
@@ -17,9 +18,12 @@ const ProductItem = ({ params }) => {
   return (
     <div>
       <div>
-        <p>Product ID: {productDetails.id}</p> <hr />
-        <p>Price: {productDetails.price}</p> <hr />
-        <h1>Product Name: {productDetails.productname}</h1> <hr />
+        <form>
+          <p>Product ID: {productDetails.id}</p> <hr />
+          <p>Price: {productDetails.price}</p> <hr />
+          <h1>Product Name: {productDetails.productname}</h1> <hr />
+        </form>
+        <button type='button'>Add to Cart</button>
       </div>
     </div>
   );
