@@ -8,7 +8,7 @@ const FeatureItem = () => {
   const router = useRouter();
 
   const handleProductId = (id) => {
-    return router.push(`/productPage/productItem`);
+    return router.push(`/productPage/${id}`);
     // return router.push(`/productPage/productItem?id=${id}`);
   };
 
