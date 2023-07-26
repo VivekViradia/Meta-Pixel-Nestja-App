@@ -11,6 +11,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Pixel Nextjs</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
+        />
+        <script src="js/header.js"></script>
+        <script defer="defer" src="bundle.js"></script>
+        <link href="main.css" rel="stylesheet" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
