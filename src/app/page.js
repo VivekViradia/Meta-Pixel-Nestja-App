@@ -13,14 +13,12 @@ export default function Home() {
 
   return (
     <main>
-      <CartProvider>
-        <Header />
-        <MainBody />
-        <SeparaterImage />
-        <FeatureItem />
-        <DecorativeGuide />
-        <Footer />
-     
+      <Header />
+      <MainBody />
+      <SeparaterImage />
+      <FeatureItem />
+      <DecorativeGuide />
+      <Footer />
     </main>
   )
 }
