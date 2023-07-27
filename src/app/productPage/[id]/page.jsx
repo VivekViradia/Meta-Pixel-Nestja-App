@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ProductData from "../../../Data/ProductData.json";
-import { useCart } from "../../../../contexts/cartContext";
 
 const ProductItem = ({ params }) => {
   console.log("ProductData, Page", ProductData);

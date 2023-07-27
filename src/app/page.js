@@ -1,6 +1,5 @@
 'use client'
 import { Header, MainBody, SeparaterImage, FeatureItem, DecorativeGuide, Footer } from "@/components"
-import { CartProvider } from "../../contexts/cartContext"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
         <FeatureItem />
         <DecorativeGuide />
         <Footer />
-      </CartProvider>
+     
     </main>
   )
 }
