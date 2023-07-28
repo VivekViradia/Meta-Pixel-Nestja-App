@@ -1,14 +1,22 @@
 "use client";
 import React from "react";
-// import ProductData from "../../Data/ProductData.json";
+import useSWR from "swr";
 import ProductData from "../Data/ProductData.json";
 import { useRouter } from "next/navigation";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const FeatureItem = () => {
   // const { ProductData } = Data;
   // console.log("Data123", Data);
   // console.log("ProductData123", ProductData);
   const router = useRouter();
+  const { data, error } = useSWR("/api/staticdata", fetcher);
+  console.log("Json Api Data", data);
+  //Handle the error state
+  if (error) return <div>Failed to load</div>;
+  //Handle the loading state
+  if (!data) return <div>Loading...</div>;
 
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);
