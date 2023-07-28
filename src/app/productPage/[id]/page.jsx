@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import ProductData from "../../../Data/ProductData.json";
+import ProductData from "../../../../Data/ProductData.json";
 
 const ProductItem = ({ params }) => {
-  console.log("ProductData, Page", ProductData);
+  // const { products } = ProductData;
+  // console.log("ProductData, Page", products);
   console.log("params", params);
 
   const productId = +params.id;

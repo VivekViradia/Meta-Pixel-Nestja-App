@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
-import ProductData from "../Data/ProductData.json";
+import ProductData from "../../Data/ProductData.json";
 import { useRouter } from "next/navigation";
 
 const FeatureItem = () => {
-  console.log("ProductData123", ProductData.slice(0, 4));
+  // const { ProductData } = Data;
+  // console.log("Data123", Data);
+  // console.log("ProductData123", ProductData);
   const router = useRouter();
 
   const handleProductId = (id) => {

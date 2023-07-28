@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-import ProductData from "../../Data/ProductData";
+import ProductData from "../../../Data/ProductData.json";
 import { useRouter } from "next/navigation";
 
 export const ProductPage = () => {
-  console.log("Project page Data", ProductData);
+  // const { products } = ProductData;
+  // console.log("Project page Data", products);
   const router = useRouter();
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);
