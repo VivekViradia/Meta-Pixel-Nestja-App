@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ProductData from "../../../../Data/ProductData.json";
+import ProductData from "../../../Data/ProductData.json";
 
 const ProductItem = ({ params }) => {
   // const { products } = ProductData;
