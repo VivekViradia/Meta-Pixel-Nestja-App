@@ -23,9 +23,9 @@ const MainBody = () => {
                     <iframe
                       src='https://player.vimeo.com/video/489862642?autoplay=1&loop=1&background=1&muted=1'
                       allow='autoplay; fullscreen'
-                      allowfullscreen=''
+                      allowFullScreen=''
                       data-ready='true'
-                      frameborder='0'
+                      frameBorder='0'
                       className='w-full aspect-[7/3]'
                     ></iframe>
                   </div>
@@ -57,9 +57,9 @@ const MainBody = () => {
                 <iframe
                   src='https://player.vimeo.com/video/489862642?autoplay=1&loop=1&background=1&muted=1'
                   allow='autoplay; fullscreen'
-                  allowfullscreen=''
+                  allowFullScreen=''
                   data-ready='true'
-                  frameborder='0'
+                  frameBorder='0'
                   className='w-full aspect-[7/3]'
                 ></iframe>
               </div>

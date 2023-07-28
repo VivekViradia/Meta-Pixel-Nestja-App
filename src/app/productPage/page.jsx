@@ -4,8 +4,6 @@ import ProductData from "../../../Data/ProductData.json";
 import { useRouter } from "next/navigation";
 
 export const ProductPage = () => {
-  // const { products } = ProductData;
-  // console.log("Project page Data", products);
   const router = useRouter();
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);

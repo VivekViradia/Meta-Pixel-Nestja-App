@@ -125,8 +125,8 @@ const Header = () => {
                         id='txtSearch'
                         placeholder='Search'
                         className='outline-none w-full border-0 focus:ring-0 text-[14px] tracking-[1px] text-primary h-[26px]'
-                        autocomplete='off'
-                        maxlength='255'
+                        autoComplete='off'
+                        maxLength='255'
                       />
                       <button className='w-[24px] h-[24px] absolute right-[6px] top-[6px]'>
                         <span className='material-icons text-primary font-[900]'>
