@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import useSWR from "swr";
-import ProductData from "../Data/ProductData.json";
+import ProductData from "../../Data/ProductData.json";
 import { useRouter } from "next/navigation";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
