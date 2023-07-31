@@ -25,11 +25,7 @@ const ProductListing = ({ productData }) => {
                 >
                   {productData.map((product, index) => {
                     return (
-                      <li
-                        className='text-center'
-                        key={index}
-                        onClick={() => handleProductId(product.id)}
-                      >
+                      <li className='text-center' key={index}>
                         <div className=''>
                           <div className='flex text-center lg:w-auto'>
                             <div className='relative border border-gray-200 pb-[30px]'>
@@ -49,7 +45,10 @@ const ProductListing = ({ productData }) => {
                                   </a>
                                 </div>
                               </div>
-                              <div className='mt-[24px] pl-[8px] pr-[8px]'>
+                              <div
+                                className='mt-[24px] pl-[8px] pr-[8px]'
+                                onClick={() => handleProductId(product.id)}
+                              >
                                 <div className='mt-[14px] text-anchor hover:text-anchor-hover h-[44px] text-ellipsis overflow-hidden line-clamp-2 text-small-text tracking-[1.4px]'>
                                   <a className='relative underline text-[#006cd1]'>
                                     <span className='absolute inset-0'></span>

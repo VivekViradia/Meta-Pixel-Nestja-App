@@ -11,6 +11,11 @@ const Product = ({ productDetails }) => {
           <h1>Product Name: {productDetails.productname}</h1> <hr />
         </form>
         <button type='button' className='border border-gray-700'>
+          Add to Wish List
+        </button>
+        <br />
+        <br />
+        <button type='button' className='border border-gray-700'>
           Add to Cart
         </button>
       </div>

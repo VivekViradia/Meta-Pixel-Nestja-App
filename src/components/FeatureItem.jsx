@@ -42,11 +42,12 @@ const FeatureItem = () => {
                                       className='w-auto h-auto max-h-max'
                                       width='50'
                                     />
-                                    <div className='absolute top-5 right-5 text-gray-800 p-1 z-5'>
-                                      <svg
-                                        viewBox='0 0 44 44'
-                                        className='w-4 h-4'
-                                      ></svg>
+                                    <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
+                                      <a className='text-primary hover:text-secondary'>
+                                        <span className='material-icons-outlined'>
+                                          favorite_border
+                                        </span>
+                                      </a>
                                     </div>
                                   </div>
                                   <div className='mt-6'>
