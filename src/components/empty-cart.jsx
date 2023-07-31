@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmptyCard = () => {
+const EmptyCart = () => {
   return (
     <div className='font-Outfit tracking-[1.4px]'>
       <div className='bg-[#ffffff] sticky top-0 z-40 shadow-[0_0px_5px_rgba(0,0,0,0.12)]'>
@@ -3581,4 +3581,4 @@ const EmptyCard = () => {
   );
 };
 
-export default EmptyCard;
+export default EmptyCart;

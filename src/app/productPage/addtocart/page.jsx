@@ -1,8 +1,8 @@
-import EmptyCard from "@/components/empty-card";
+import EmptyCart from "@/components/empty-cart";
 import React from "react";
 
 const page = () => {
-  return <EmptyCard />;
+  return <EmptyCart />;
 };
 
 export default page;
