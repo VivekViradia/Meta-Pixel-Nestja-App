@@ -1,1 +1,0 @@
-import Alpine from"alpinejs";window.Alpine=Alpine,Alpine.start();import"./header.js";import"tw-elements";import"../style.css";
