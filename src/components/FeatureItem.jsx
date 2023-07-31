@@ -1,22 +1,23 @@
 "use client";
 import React from "react";
 import useSWR from "swr";
-import ProductData from "../../Data/ProductData.json";
+// import ProductData from "../../Data/ProductData.json";
+import { ProductData123 } from "@/constants";
 import { useRouter } from "next/navigation";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+// const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const FeatureItem = () => {
   // const { ProductData } = Data;
   // console.log("Data123", Data);
   // console.log("ProductData123", ProductData);
   const router = useRouter();
-  const { data, error } = useSWR("/api/staticdata", fetcher);
-  console.log("Json Api Data", data);
-  //Handle the error state
-  if (error) return <div>Failed to load</div>;
-  //Handle the loading state
-  if (!data) return <div>Loading...</div>;
+  // const { data, error } = useSWR("/api/staticdata", fetcher);
+  // console.log("Json Api Data", data);
+  // //Handle the error state
+  // if (error) return <div>Failed to load</div>;
+  // //Handle the loading state
+  // if (!data) return <div>Loading...</div>;
 
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);
@@ -38,7 +39,7 @@ const FeatureItem = () => {
                   className='panel-01 tab-content overflow-hidden'
                 >
                   <div class='flex flex-wrap sm:-mx-3 gap-y-6'>
-                    {ProductData.map((product, index) => {
+                    {ProductData123.map((product, index) => {
                       if (index < 4) {
                         return (
                           <div
