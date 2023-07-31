@@ -5,8 +5,6 @@ import { ProductData123 } from "@/constants";
 import Product from "@/components/Product";
 
 const ProductItem = ({ params }) => {
-  // const { products } = ProductData;
-  // console.log("ProductData, Page", products);
   console.log("params", params);
 
   const productId = +params.id;
@@ -17,19 +15,7 @@ const ProductItem = ({ params }) => {
 
   console.log("productDetails", productDetails);
 
-  return (
-    // <div>
-    //   <div>
-    //     <form>
-    //       <p>Product ID: {productDetails.id}</p> <hr />
-    //       <p>Price: {productDetails.price}</p> <hr />
-    //       <h1>Product Name: {productDetails.productname}</h1> <hr />
-    //     </form>
-    //     <button type='button'>Add to Cart</button>
-    //   </div>
-    // </div>
-    <Product productDetails={productDetails} />
-  );
+  return <Product productDetails={productDetails} />;
 };
 
 export default ProductItem;
