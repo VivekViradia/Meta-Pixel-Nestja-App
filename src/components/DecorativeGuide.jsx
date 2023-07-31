@@ -128,25 +128,25 @@ const DecorativeGuide = () => {
                   style={{ display: " none" }}
                 >
                   <div className='mb-2'>
-                    Today's outerwear is also today's professional wear. The
-                    lines have blurred for the better! It can't be overstated:
-                    The quality and feel of a customized jacket, with your brand
-                    logo, sends an instant message that your brand strongly
-                    values high-standards and success.
+                    Today&apos;s outerwear is also today&apos;s professional
+                    wear. The lines have blurred for the better! It can&apos;t
+                    be overstated: The quality and feel of a customized jacket,
+                    with your brand logo, sends an instant message that your
+                    brand strongly values high-standards and success.
                   </div>
                   <div>
                     Outerwear is versatile and works with almost any style of
-                    clothing. It's also one of the most powerful branding items
-                    because of its usage-frequency. Your recipients will choose
-                    to wear your custom jacket from top-name brands. We have
-                    seen from experience that brands that make the investment in
-                    high-quality custom jackets, custom fleeces, or vests
-                    invariably find that these get a lot of traction, and more
-                    impressions, which raise brand-recognition. Outerwear brands
-                    everyone loves, with your custom logo are a smart, effective
-                    option, then, to strengthen your brand persona. We've found
-                    this is true for both small businesses and enterprise
-                    organizations.
+                    clothing. It&apos;s also one of the most powerful branding
+                    items because of its usage-frequency. Your recipients will
+                    choose to wear your custom jacket from top-name brands. We
+                    have seen from experience that brands that make the
+                    investment in high-quality custom jackets, custom fleeces,
+                    or vests invariably find that these get a lot of traction,
+                    and more impressions, which raise brand-recognition.
+                    Outerwear brands everyone loves, with your custom logo are a
+                    smart, effective option, then, to strengthen your brand
+                    persona. We&apos;ve found this is true for both small
+                    businesses and enterprise organizations.
                   </div>
                 </div>
               </li>
@@ -214,13 +214,13 @@ const DecorativeGuide = () => {
                     Athleisure is the cross between high-performing athletic
                     wear and style that works in settings other than the gym,
                     trail, or on the field. But in order to make the jump from
-                    active to office-wear, today's consumers desire a
+                    active to office-wear, today&apos;s consumers desire a
                     sophisticated-level of quality for sports apparel. They want
                     to feel comfortable wearing a piece to the office, or during
-                    the workday, that looks like it's suited for a professional
-                    environment. Corporate Gear has offered a select number of
-                    premium brands that have trailblazed this unique, practical
-                    demand.
+                    the workday, that looks like it&apos;s suited for a
+                    professional environment. Corporate Gear has offered a
+                    select number of premium brands that have trailblazed this
+                    unique, practical demand.
                   </div>
                   <div className='mb-6'>
                     The difference is in the quality and style options. As
@@ -239,8 +239,8 @@ const DecorativeGuide = () => {
                     to team benefits, for the office. This type of custom
                     apparel engenders the same sense of positive
                     community-building, competitive edge, and success as it does
-                    for a sports team. But it's the name-brand quality that sets
-                    that positive bar for your brand.
+                    for a sports team. But it&apos;s the name-brand quality that
+                    sets that positive bar for your brand.
                   </div>
                 </div>
               </li>
@@ -270,7 +270,7 @@ const DecorativeGuide = () => {
                     Premium accessories are the right option for promotional
                     events, and products. Swag should be a quality gift.
                     Recipients no longer want a toss-away item (did they ever?).
-                    Your brand is expected to meet a customer or client's
+                    Your brand is expected to meet a customer or client&apos;s
                     current expectation. Your employees, colleagues, and
                     recipients will appreciate their custom, quality tumblers,
                     backpacks, and coolers from well-loved brands. Corporate
@@ -287,7 +287,7 @@ const DecorativeGuide = () => {
                     top name-brand promotional products, and customize premium
                     corporate gifts. You can shop bags, company hats, custom
                     backpacks, corporate drinkware, and custom electronics, then
-                    we'll customize your brand logo to perfection.
+                    we&apos;ll customize your brand logo to perfection.
                   </div>
                 </div>
               </li>
@@ -316,12 +316,13 @@ const DecorativeGuide = () => {
                   <div className='mb-2'>
                     For Corporate Gear customers, your marketing is never a
                     one-size-fits-all approach to reaching customers and new
-                    clients. We seek to meet every brand's need. Our selection
-                    of corporate gear, customized promotional accessories, and
-                    corporate branded clothing is decidedly versatile, to meet
-                    your brand marketing goals. You’ll find that your online
-                    ordering and customization experience reflects that. For any
-                    size business, your order process will include:
+                    clients. We seek to meet every brand&apos;s need. Our
+                    selection of corporate gear, customized promotional
+                    accessories, and corporate branded clothing is decidedly
+                    versatile, to meet your brand marketing goals. You’ll find
+                    that your online ordering and customization experience
+                    reflects that. For any size business, your order process
+                    will include:
                   </div>
                   <div className='mb-2 ml-6'>
                     <ul className='list-disc'>
@@ -384,7 +385,7 @@ const DecorativeGuide = () => {
                     highlight your brand logo and company.
                   </div>
                   <div className='mb-2'>
-                    You’ll feel the difference in having a full-service,
+                    You&apos;ll feel the difference in having a full-service,
                     in-house team for your custom corporate apparel and logo
                     orders.
                   </div>
@@ -395,11 +396,11 @@ const DecorativeGuide = () => {
                     results.
                   </div>
                   <div>
-                    We are more agile, and can ensure you're a greater part of
-                    the process, if that's what you prefer. From order updates,
-                    to inquiries on customization changes, our full-service
-                    model is a key to why customers return, and love their
-                    results.
+                    We are more agile, and can ensure you&apos;re a greater part
+                    of the process, if that&apos;s what you prefer. From order
+                    updates, to inquiries on customization changes, our
+                    full-service model is a key to why customers return, and
+                    love their results.
                   </div>
                 </div>
               </li>
