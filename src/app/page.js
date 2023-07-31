@@ -1,5 +1,5 @@
 'use client'
-import { Header, MainBody, SeparaterImage, FeatureItem, DecorativeGuide, Footer } from "@/components"
+import { MainBody, SeparaterImage, FeatureItem, DecorativeGuide, Footer } from "@/components"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main>
-      <Header />
+
       <MainBody />
       <SeparaterImage />
       <FeatureItem />

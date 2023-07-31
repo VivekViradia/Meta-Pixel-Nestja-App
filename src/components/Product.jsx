@@ -10,7 +10,9 @@ const Product = ({ productDetails }) => {
           <p>Price: {productDetails.price}</p> <hr />
           <h1>Product Name: {productDetails.productname}</h1> <hr />
         </form>
-        <button type='button'>Add to Cart</button>
+        <button type='button' className='border border-gray-700'>
+          Add to Cart
+        </button>
       </div>
     </div>
   );

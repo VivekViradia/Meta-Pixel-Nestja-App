@@ -1,3 +1,4 @@
+import { Header } from '@/components';
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
@@ -77,7 +78,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
           }}
-        />{children}
+        /><Header />
+        {children}
       </body>
     </html>
   )
