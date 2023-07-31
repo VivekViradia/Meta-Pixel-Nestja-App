@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         />
         <script src="js/header.js"></script>
         <script defer="defer" src="bundle.js"></script>
-        <link href="main.css" rel="stylesheet" />
+        <link href="https://corporategear.online/assets/css/main.css?0.6369590826868674" rel="stylesheet" />
 
         {/* <!-- Google Tag Manager --> */}
 
