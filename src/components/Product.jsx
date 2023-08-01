@@ -2,6 +2,7 @@
 import React from "react";
 
 const Product = ({ productDetails }) => {
+  console.log("Product Details", productDetails);
   return (
     <div>
       <div>

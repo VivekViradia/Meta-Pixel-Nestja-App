@@ -2,12 +2,14 @@
 import React from "react";
 import { ProductData123 } from "@/constants";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const FeatureItem = () => {
   const router = useRouter();
 
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);
+    // router.push(`/productPage/wishlist/${id}`);
   };
 
   return (
@@ -43,11 +45,15 @@ const FeatureItem = () => {
                                       width='50'
                                     />
                                     <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
-                                      <a className='text-primary hover:text-secondary'>
+                                      <Link
+                                        href={`/productPage/wishlist/${product.id}`}
+                                        className='text-primary hover:text-secondary'
+                                        legacyBehavior
+                                      >
                                         <span className='material-icons-outlined'>
                                           favorite_border
                                         </span>
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                   <div className='mt-6'>
