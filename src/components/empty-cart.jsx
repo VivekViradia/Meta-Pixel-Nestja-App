@@ -120,7 +120,7 @@ const EmptyCart = () => {
                     </button>
                   </div>
                   <div className='mt-[10px] text-extra-small-text text-center'>
-                    By Clicking "SHOP NOW", you agree to our
+                    By Clicking SHOP NOW, you agree to our
                     <a href='javascript:void(0);'>Terms of use</a> and
                     <a href='javascript:void(0);'>Privacy policy</a>.
                   </div>
@@ -484,7 +484,7 @@ const EmptyCart = () => {
           <div className='py-[12%]'>
             <div className='text-2xl-text'>Your Cart is Empty.</div>
             <div className='text-title-text mt-[10px]'>
-              There's nothing in your cart.
+              There&apos;s nothing in your cart.
             </div>
             <div className='text-title-text mt-[10px]'>
               Not to worry: we have lots of other great finds.

@@ -121,7 +121,7 @@ const WishList = () => {
                     </button>
                   </div>
                   <div className='mt-[10px] text-extra-small-text text-center'>
-                    By Clicking "SHOP NOW", you agree to our
+                    By Clicking &quot;SHOP NOW&quot;, you agree to our
                     <a href='javascript:void(0);'>Terms of use</a> and
                     <a href='javascript:void(0);'>Privacy policy</a>.
                   </div>
@@ -600,7 +600,7 @@ const WishList = () => {
                       href='/patagonia-men-s-micro-d-pullover.html'
                       className='text-anchor h-[40px] block'
                     >
-                      Patagonia Men's Micro D Quarter-Zip
+                      Patagonia Men&apos;s Micro D Quarter-Zip
                     </a>
                   </div>
                   <div className='flex flex-wrap justify-center items-center mt-[5px] mb-[10px]'>
@@ -639,7 +639,7 @@ const WishList = () => {
                       href='/patagonia-men-s-micro-d-pullover.html'
                       className='text-anchor h-[40px] block'
                     >
-                      Patagonia Men's Micro D Quarter-Zip
+                      Patagonia Men&apos;s Micro D Quarter-Zip
                     </a>
                   </div>
                   <div className='flex flex-wrap justify-center items-center mt-[5px] mb-[10px]'>
@@ -678,7 +678,7 @@ const WishList = () => {
                       href='/patagonia-men-s-micro-d-pullover.html'
                       className='text-anchor h-[40px] block'
                     >
-                      Under Armour Men's Playoff 2.0 Heather Polo
+                      Under Armour Men&apos;s Playoff 2.0 Heather Polo
                     </a>
                   </div>
                   <div className='flex flex-wrap justify-center items-center mt-[5px] mb-[10px]'>
@@ -717,7 +717,7 @@ const WishList = () => {
                       href='/patagonia-men-s-micro-d-pullover.html'
                       className='text-anchor h-[40px] block'
                     >
-                      Patagonia Men's Micro D Quarter-Zip
+                      Patagonia Men&apos;s Micro D Quarter-Zip
                     </a>
                   </div>
                   <div className='flex flex-wrap justify-center items-center mt-[5px] mb-[10px]'>
