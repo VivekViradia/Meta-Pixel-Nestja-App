@@ -1,16 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { ProductData123 } from "@/constants";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const FeatureItem = () => {
   const router = useRouter();
+  // const [data, setData] = useState([]);
 
   const handleProductId = (id) => {
     return router.push(`/productPage/${id}`);
-    // router.push(`/productPage/wishlist/${id}`);
   };
+
+  // const handleProductDataID = (id) => {
+  //   console.log("IDIDIDI", id);
+  //   const newID = id; // Replace this with the new value you want to add
+  //   setData((prevID) => [...prevID, newID]);
+  // };
+
+  // console.log("State Data", data);
 
   return (
     <div>
@@ -46,13 +54,19 @@ const FeatureItem = () => {
                                     />
                                     <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
                                       <Link
-                                        href={`/productPage/wishlist/${product.id}`}
+                                        href={`/wishlist/`}
                                         className='text-primary hover:text-secondary'
                                         legacyBehavior
                                       >
-                                        <span className='material-icons-outlined'>
-                                          favorite_border
-                                        </span>
+                                        <a
+                                        // onClick={() =>
+                                        //   handleProductDataID(product.id)
+                                        // }
+                                        >
+                                          <span className='material-icons-outlined'>
+                                            favorite_border
+                                          </span>
+                                        </a>
                                       </Link>
                                     </div>
                                   </div>
