@@ -1,6 +1,12 @@
+"use client";
 import React from "react";
 
-const WishList = () => {
+const WishList = ({ productID, productName, productPrice }) => {
+  // const [product]
+
+  console.log("ProductID", productID);
+  console.log("productName", productName);
+  console.log("productPrice", productPrice);
   return (
     <div className='font-Outfit'>
       <div

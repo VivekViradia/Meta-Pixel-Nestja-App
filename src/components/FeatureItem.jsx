@@ -12,14 +12,6 @@ const FeatureItem = () => {
     return router.push(`/productPage/${id}`);
   };
 
-  // const handleProductDataID = (id) => {
-  //   console.log("IDIDIDI", id);
-  //   const newID = id; // Replace this with the new value you want to add
-  //   setData((prevID) => [...prevID, newID]);
-  // };
-
-  // console.log("State Data", data);
-
   return (
     <div>
       <section className='bg-white relative z-20 pt-20'>
@@ -52,21 +44,24 @@ const FeatureItem = () => {
                                       className='w-auto h-auto max-h-max'
                                       width='50'
                                     />
-                                    <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
+                                    <div
+                                      className='absolute top-1 right-1 text-gray-800 p-1 z-5'
+                                      // onClick={() => handleProductData(product)}
+                                    >
                                       <Link
-                                        href={`/wishlist/`}
-                                        className='text-primary hover:text-secondary'
-                                        legacyBehavior
+                                        href={{
+                                          pathname: `/wishlist/`,
+                                          query: {
+                                            productID: product.id,
+                                            productName: product.productname,
+                                            productPrice: product.price,
+                                          },
+                                        }}
                                       >
-                                        <a
-                                        // onClick={() =>
-                                        //   handleProductDataID(product.id)
-                                        // }
-                                        >
-                                          <span className='material-icons-outlined'>
-                                            favorite_border
-                                          </span>
-                                        </a>
+                                        {" "}
+                                        <span className='material-icons-outlined'>
+                                          favorite_border
+                                        </span>
                                       </Link>
                                     </div>
                                   </div>
