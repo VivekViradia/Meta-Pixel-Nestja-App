@@ -184,7 +184,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                       Subtotal
                     </dt>
                     <dd className='text-normal-text tracking-normal'>
-                      ${productPriceInt + 10}
+                      ${productPriceInt}
                     </dd>
                   </div>
 
