@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Cart = ({ productID, productName, productPrice }) => {
   console.log(
@@ -31,25 +32,24 @@ const Cart = ({ productID, productName, productPrice }) => {
               </td>
             </tr>
           </tbody>
-          {/* <tbody>
-            {products.map((product) => (
-              <tr key={product.id}>
-                <td className='border border-gray-400 px-4 py-2'>
-                  {product.id}
-                </td>
-                <td className='border border-gray-400 px-4 py-2'>
-                  {product.name}
-                </td>
-                <td className='border border-gray-400 px-4 py-2'>
-                  ${product.price}
-                </td>
-                <td className='border border-gray-400 px-4 py-2'>
-                  {product.description}
-                </td>
-              </tr>
-            ))}
-          </tbody> */}
         </table>
+      </div>
+      <div>
+        <Link
+          href={{
+            pathname: `/checkout/`,
+            query: {
+              productID: productID,
+              productName: productName,
+              productPrice: productPrice,
+            },
+          }}
+          legacyBehavior
+        >
+          <a className='btn btn-normal btn-secondary border border-gray-700'>
+            Checkout
+          </a>
+        </Link>
       </div>
     </div>
   );
