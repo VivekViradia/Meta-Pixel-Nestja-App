@@ -25,9 +25,9 @@ const EmptyCart = () => {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      fill-rule='evenodd'
+                      fillRule='evenodd'
                       d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                      clip-rule='evenodd'
+                      clipRule='evenodd'
                     ></path>
                   </svg>
                 </button>
@@ -103,7 +103,6 @@ const EmptyCart = () => {
                     </div>
                     <div className='mb-[10px]'>
                       <a
-                        href='javascript:void(0);'
                         data-modal-toggle='Login1Modal'
                         className='text-anchor'
                       >
@@ -121,8 +120,8 @@ const EmptyCart = () => {
                   </div>
                   <div className='mt-[10px] text-extra-small-text text-center'>
                     By Clicking SHOP NOW, you agree to our
-                    <a href='javascript:void(0);'>Terms of use</a> and
-                    <a href='javascript:void(0);'>Privacy policy</a>.
+                    <a>Terms of use</a> and
+                    <a>Privacy policy</a>.
                   </div>
                 </div>
               </div>
@@ -144,7 +143,7 @@ const EmptyCart = () => {
                 </div>
                 <div className='flex items-center gap-x-2'>
                   <a
-                    href='javascript:void(0);'
+                  
                     data-modal-toggle='LoginModal'
                     className='text-anchor'
                   >
@@ -162,9 +161,9 @@ const EmptyCart = () => {
                       xmlns='http://www.w3.org/2000/svg'
                     >
                       <path
-                        fill-rule='evenodd'
+                        fillRule='evenodd'
                         d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                        clip-rule='evenodd'
+                        clipRule='evenodd'
                       ></path>
                     </svg>
                   </button>
@@ -219,9 +218,9 @@ const EmptyCart = () => {
                       xmlns='http://www.w3.org/2000/svg'
                     >
                       <path
-                        fill-rule='evenodd'
+                        fillRule='evenodd'
                         d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                        clip-rule='evenodd'
+                        clipRule='evenodd'
                       ></path>
                     </svg>
                   </button>
@@ -237,7 +236,7 @@ const EmptyCart = () => {
                       <input
                         id='First Name'
                         name='First Name'
-                        autocomplete='First Name'
+                        autoComplete='First Name'
                         placeholder='First Name'
                         value=''
                         className='form-input'
@@ -252,7 +251,7 @@ const EmptyCart = () => {
                       <input
                         id='Last Name'
                         name='Last Name'
-                        autocomplete='Last Name'
+                        autoComplete='Last Name'
                         placeholder='Last Name'
                         value=''
                         className='form-input'
@@ -268,7 +267,7 @@ const EmptyCart = () => {
                         type='email'
                         id='email-address'
                         name='email-address'
-                        autocomplete='email'
+                        autoComplete='email'
                         placeholder='Email Address'
                         value=''
                         className='form-input'
@@ -325,9 +324,9 @@ const EmptyCart = () => {
                       xmlns='http://www.w3.org/2000/svg'
                     >
                       <path
-                        fill-rule='evenodd'
+                        fillRule='evenodd'
                         d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-                        clip-rule='evenodd'
+                        clipRule='evenodd'
                       ></path>
                     </svg>
                   </button>
@@ -341,7 +340,7 @@ const EmptyCart = () => {
                       <select
                         id='country'
                         name='country'
-                        autocomplete='country-name'
+                        autoComplete='country-name'
                         className='form-input'
                       >
                         <option>Select Country</option>
@@ -359,7 +358,7 @@ const EmptyCart = () => {
                       <input
                         id='full-name'
                         name='full-name'
-                        autocomplete='full-name'
+                        autoComplete='full-name'
                         placeholder='Full Name'
                         className='form-input'
                       />
@@ -373,7 +372,7 @@ const EmptyCart = () => {
                       <input
                         id='street-address'
                         name='street-address'
-                        autocomplete='street-address'
+                        autoComplete='street-address'
                         placeholder='Street Address'
                         className='form-input'
                       />
@@ -381,7 +380,7 @@ const EmptyCart = () => {
                   </div>
                   <div className='w-full pl-[15px] pr-[15px]'>
                     <span className=''>
-                      <a href='javascript:void(0);' title='Add Address Line 2'>
+                      <a title='Add Address Line 2'>
                         + Add Address Line 2
                       </a>
                     </span>
@@ -394,7 +393,7 @@ const EmptyCart = () => {
                       <input
                         id='street-address'
                         name='street-address'
-                        autocomplete='street-address'
+                        autoComplete='street-address'
                         placeholder='Street Address'
                         className='form-input'
                       />
@@ -408,7 +407,7 @@ const EmptyCart = () => {
                       <input
                         id='Apt-suit'
                         name='Apt-suit'
-                        autocomplete='Apt-suit'
+                        autoComplete='Apt-suit'
                         placeholder='Apt/Suit/Other(optional)'
                         className='form-input'
                       />
@@ -422,7 +421,7 @@ const EmptyCart = () => {
                       <input
                         id='Zip-code'
                         name='Zip-code'
-                        autocomplete='Zip-code'
+                        autoComplete='Zip-code'
                         placeholder='Zip Code'
                         className='form-input'
                       />
@@ -436,7 +435,7 @@ const EmptyCart = () => {
                       <input
                         id='Phone Number'
                         name='Phone Number'
-                        autocomplete='Phone Number'
+                        autoComplete='Phone Number'
                         placeholder='1-(000)-000-0000'
                         className='form-input'
                       />
@@ -492,7 +491,7 @@ const EmptyCart = () => {
             <div className='mt-[20px]'>
               <a
                 title=''
-                href='javascript:void(0);'
+          
                 className='btn btn-md btn-secondary'
               >
                 START SHOPPING
@@ -815,7 +814,7 @@ const EmptyCart = () => {
                           Email address
                         </label>
                         <input
-                          autocomplete='email'
+                          autoComplete='email'
                           className='appearance-none min-w-0 w-full bg-[#ffffff] border border-gray-300 py-2 px-4 text-base text-primary placeholder-primary focus:outline-none focus:ring-0 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs'
                           id='email-address'
                           name='email-address'

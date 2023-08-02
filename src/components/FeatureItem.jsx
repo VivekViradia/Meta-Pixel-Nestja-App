@@ -44,10 +44,7 @@ const FeatureItem = () => {
                                       className='w-auto h-auto max-h-max'
                                       width='50'
                                     />
-                                    <div
-                                      className='absolute top-1 right-1 text-gray-800 p-1 z-5'
-                                      // onClick={() => handleProductData(product)}
-                                    >
+                                    <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
                                       <Link
                                         href={{
                                           pathname: `/wishlist/`,

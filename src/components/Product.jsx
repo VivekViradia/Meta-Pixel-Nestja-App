@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const Product = ({ productDetails }) => {
   console.log("Product Details", productDetails);
@@ -11,14 +12,41 @@ const Product = ({ productDetails }) => {
           <p>Price: {productDetails.price}</p> <hr />
           <h1>Product Name: {productDetails.productname}</h1> <hr />
         </form>
-        <button type='button' className='border border-gray-700'>
-          Add to Wish List
-        </button>
+        <div>
+          <Link
+            href={{
+              pathname: `/wishlist/`,
+              query: {
+                productID: productDetails.id,
+                productName: productDetails.productname,
+                productPrice: productDetails.price,
+              },
+            }}
+          >
+            <button type='button' className='border border-gray-700'>
+              Add to Wish List
+            </button>
+          </Link>
+        </div>
+
         <br />
         <br />
-        <button type='button' className='border border-gray-700'>
-          Add to Cart
-        </button>
+        <div>
+          <Link
+            href={{
+              pathname: `/addtocart/`,
+              query: {
+                productID: productDetails.id,
+                productName: productDetails.productname,
+                productPrice: productDetails.price,
+              },
+            }}
+          >
+            <button type='button' className='border border-gray-700'>
+              Add to Cart
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

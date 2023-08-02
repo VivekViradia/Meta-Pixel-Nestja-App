@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Link from "next/link";
 
 const ProductListing = ({ productData }) => {
   console.log("fgshgb", productData);
@@ -38,11 +39,21 @@ const ProductListing = ({ productData }) => {
                                   />
                                 </a>
                                 <div className='absolute top-1 right-1 text-gray-800 p-1 z-5'>
-                                  <a className='text-primary hover:text-secondary'>
+                                  {" "}
+                                  <Link
+                                    href={{
+                                      pathname: `/wishlist/`,
+                                      query: {
+                                        productID: product.id,
+                                        productName: product.productname,
+                                        productPrice: product.price,
+                                      },
+                                    }}
+                                  >
                                     <span className='material-icons-outlined'>
                                       favorite_border
                                     </span>
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                               <div
