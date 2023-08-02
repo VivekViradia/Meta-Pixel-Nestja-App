@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const CheckOut = ({ productID, productName, productPrice }) => {
   console.log("Check Out Components", productID, productName, productPrice);
@@ -22,6 +23,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
   });
 
   const [record, setRecord] = useState([]);
+  //   console.log("Infomation Name", record[0].name);
 
   const handleInput = (e) => {
     const name = e.target.name;
@@ -60,33 +62,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                   number.
                 </div>
                 <div className='max-w-[600px]'>
-                  {/* <div className='relative z-0 w-full mb-[20px] border border-gray-border rounded'>
-                    <input
-                      name='EmailAddress'
-                      placeholder=' Email Address*'
-                      required
-                      className='pt-[15px] pb-[0px] block w-full px-[8px] h-[48px] mt-[0px] text-sub-text text-[18px] text-[#000000] bg-transparent border-0 appearance-none focus:outline-none focus:ring-0'
-                    />
-                    <input
-                      name='Name'
-                      placeholder=' Full Name*'
-                      required
-                      className='pt-[15px] pb-[0px] block w-full px-[8px] h-[48px] mt-[0px] text-sub-text text-[18px] text-[#000000] bg-transparent border-0 appearance-none focus:outline-none focus:ring-0'
-                    />
-                    <input
-                      name='PhoneNumber'
-                      placeholder=' Contact No.*'
-                      required
-                      className='pt-[15px] pb-[0px] block w-full px-[8px] h-[48px] mt-[0px] text-sub-text text-[18px] text-[#000000] bg-transparent border-0 appearance-none focus:outline-none focus:ring-0'
-                    />
-                    <input
-                      name='HomeAddress'
-                      placeholder=' Home Address*'
-                      required
-                      className='pt-[15px] pb-[0px] block w-full px-[8px] h-[48px] mt-[0px] text-sub-text text-[18px] text-[#000000] bg-transparent border-0 appearance-none focus:outline-none focus:ring-0'
-                    />
-                  </div> */}
-                  <div className='relative z-0 w-full mb-[20px] border border-gray-border rounded'>
+                  <div className='relative z-0 w-full mb-[20px]'>
                     <form onSubmit={handleSubmit}>
                       <h1>Login Form</h1>
                       <input
@@ -150,30 +126,40 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                       <h1> User's Details</h1>
                       <br />
                       <br />
-
-                      {record.map((item, index) => {
-                        return (
-                          <div key={index}>
-                            <span>Name: {item.name}</span>
-                            <br />
-                            <span>House Address: {item.address}</span>
-                            <br />
-                            <span>Email Address: {item.email}</span>
-                            <br />
-                            <span>Contact: {item.contact}</span>
-                            <br />
-                          </div>
-                        );
-                      })}
                     </div>
-                  </div>
-                  <div className='mb-6 border border-black'>
-                    <a
-                      id='btn-start-checkout'
-                      className='btn btn-secondary btn-lg font-semibold '
-                    >
-                      Place Order
-                    </a>
+                    {record.map((item, index) => {
+                      return (
+                        <div key={index}>
+                          <span>Name: {item.name}</span>
+                          <br />
+                          <span>House Address: {item.address}</span>
+                          <br />
+                          <span>Email Address: {item.email}</span>
+                          <br />
+                          <span>Contact: {item.contact}</span>
+                          <br />
+                        </div>
+                      );
+                    })}
+                    <div className='mb-6 border border-black'>
+                      {" "}
+                      <Link
+                        href={{
+                          pathname: `/thankyou/`,
+                          query: {
+                            totalAmount: totalAmount,
+                          },
+                        }}
+                        legacyBehavior
+                      >
+                        <a
+                          id='btn-start-checkout'
+                          className='btn btn-secondary btn-lg font-semibold '
+                        >
+                          Place Order
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                   <div className='text-small-text tracking-normal'>
                     By continuing, you agree to our Terms of Use and consent to
@@ -237,22 +223,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                 be charged in 5-7 days after submitted unless confirmed as
                 finalized or otherwise cancelled prior to then.
               </div>
-              <div className=''>
-                <a
-                  className='btn btn-lg !w-full text-center btn-secondary mb-[8px]'
-                  id='btn-review-order'
-                >
-                  REVIEW ORDER
-                </a>
-                <a
-                  href='thankyou-order.html'
-                  className='btn btn-lg !w-full text-center btn-secondary mb-[8px]'
-                  id='btn-place-order'
-                  style={{ display: "none" }}
-                >
-                  PLACE ORDER
-                </a>
-              </div>
+
               <div className='bg-light-gray pl-[15px] pr-[15px] pt-[15px] pb-[15px] text-center mb-[15px]'>
                 <div className='text-2xl font-medium mb-4 align-middle'>
                   <span className='material-icons !text-anchor align-middle'>
