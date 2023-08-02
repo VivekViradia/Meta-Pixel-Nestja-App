@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Link from "next/link";
 
 const WishList = ({ productID, productName, productPrice }) => {
   // const [product]
@@ -47,10 +48,22 @@ const WishList = ({ productID, productName, productPrice }) => {
                       onClick={() => handleProductClick(productID)}
                     >
                       View
-                    </a>
-                    <a className='btn btn-normal btn-secondary border border-gray-700'>
-                      Add To Cart
-                    </a>
+                    </a>{" "}
+                    <Link
+                      href={{
+                        pathname: `/addtocart/`,
+                        query: {
+                          productID: productID,
+                          productName: productName,
+                          productPrice: productPrice,
+                        },
+                      }}
+                      legacyBehavior
+                    >
+                      <a className='btn btn-normal btn-secondary border border-gray-700'>
+                        Add To Cart
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
