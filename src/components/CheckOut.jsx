@@ -123,7 +123,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                       }}
                     />
                     <div>
-                      <h1> User's Details</h1>
+                      <h1> User&apos;s Details</h1>
                       <br />
                       <br />
                     </div>
