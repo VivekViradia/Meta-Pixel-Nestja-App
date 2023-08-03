@@ -14,6 +14,27 @@ const WishListPage = () => {
   const company = searchParams.get("company");
   console.log("productData", productID, productName, productPrice);
 
+  useEffect(() => {
+    dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+    dataLayer.push({
+      event: "wishlist",
+      ecommerce: {
+        currency: "USD",
+        value: { productPrice },
+        items: [
+          {
+            item_id: { productID },
+            item_name: { productName },
+            affiliation: { company },
+            discount: 2.22,
+            price: { productPrice },
+            quantity: 1,
+          },
+        ],
+      },
+    });
+  });
+
   return (
     <div>
       {data ? (

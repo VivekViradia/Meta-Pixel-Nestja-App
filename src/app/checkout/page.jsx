@@ -1,7 +1,7 @@
 "use client";
 import CheckOut from "@/components/CheckOut";
 import { useSearchParams } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 
 const CheckoutPage = () => {
   const useParams = useSearchParams();
@@ -10,6 +10,27 @@ const CheckoutPage = () => {
   const productPrice = useParams.get("productPrice");
   const company = useParams.get("company");
   console.log(productID, productName, productPrice);
+
+  useEffect(() => {
+    dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+    dataLayer.push({
+      event: "check_out",
+      ecommerce: {
+        currency: "USD",
+        value: { productPrice },
+        items: [
+          {
+            item_id: { productID },
+            item_name: { productName },
+            affiliation: { company },
+            discount: 2.22,
+            price: { productPrice },
+            quantity: 1,
+          },
+        ],
+      },
+    });
+  });
 
   return (
     <CheckOut

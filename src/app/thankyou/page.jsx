@@ -15,6 +15,27 @@ const ThankyouPage = () => {
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     setShowModal(true);
+
+    useEffect(() => {
+      dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+      dataLayer.push({
+        event: "thank_you",
+        ecommerce: {
+          currency: "USD",
+          value: { productPrice },
+          items: [
+            {
+              item_id: { productID },
+              item_name: { productName },
+              affiliation: { company },
+              discount: 2.22,
+              price: { productPrice },
+              quantity: 1,
+            },
+          ],
+        },
+      });
+    });
   }, []);
   return (
     <div className='flex justify-center items-center h-screen'>
