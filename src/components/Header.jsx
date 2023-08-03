@@ -1,11 +1,24 @@
 "use client";
 import React, { useEffect } from "react";
 import { trackEvent } from "../../utils/gtm";
+import Script from "next/script";
 
 const Header = () => {
-  const handleClick = () => {
-    trackEvent("Button", "Click", "MyButton", 1);
-  };
+  // const handleClick = () => {
+  //   trackEvent("Button", "Click", "MyButton", 1);
+  // };
+
+  // useEffect(() => {
+  //   handleEvent;
+  // }, []);
+
+  // const handleEvent = () => {
+  //   window.dataLayer.push({
+  //     event: "Product Listing",
+  //     pagePath: "/productPage",
+  //     pageName: "ProductPage",
+  //   });
+  // };
 
   return (
     <header className='relative trancking-[1px]'>
@@ -36,6 +49,7 @@ const Header = () => {
                         <a
                           href='../productPage'
                           className='relative text-[12px] xl:text-[14px] mt-[5px] xl:ml-[10px] xl:mr-[10px] ml-[5px] mr-[5px] tracking-[1px] z-10 flex items-center font-[600] border-0 border-b-2 pt-[10px] pb-[10px] border-transparent hover:border-primary-hover text-primary hover:text-primary-hover a'
+                          onClick={() => handleEvent()}
                         >
                           <span className='uppercase'>Product Listing</span>
                         </a>

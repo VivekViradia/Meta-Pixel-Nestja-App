@@ -4,9 +4,6 @@ import Link from "next/link";
 
 const CheckOut = ({ productID, productName, productPrice }) => {
   console.log("Check Out Components", productID, productName, productPrice);
-  //   console.log("Check Out Components type of", typeof productPrice);
-
-  //   console.log("Check Out Components type of", typeof productPriceInt);
 
   const taxRate = 0.1; // 10%
 
