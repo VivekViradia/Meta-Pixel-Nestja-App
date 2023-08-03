@@ -145,6 +145,7 @@ const CheckOut = ({ productID, productName, productPrice, company }) => {
                           pathname: `/thankyou/`,
                           query: {
                             totalAmount: totalAmount,
+                            productID: productID,
                             productName: productName,
                             productPrice: productPrice,
                             company: company,
