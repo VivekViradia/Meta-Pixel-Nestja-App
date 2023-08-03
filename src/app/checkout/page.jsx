@@ -14,7 +14,7 @@ const CheckoutPage = () => {
   useEffect(() => {
     dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
     dataLayer.push({
-      event: "check_out",
+      event: "begin_checkout",
       ecommerce: {
         currency: "USD",
         value: { productPrice },
