@@ -10,6 +10,7 @@ const ThankyouPage = () => {
   const productName = useParams.get("productName");
   const productPrice = useParams.get("productPrice");
   const company = useParams.get("company");
+  const taxAmount = useParams.get("taxAmount");
 
   console.log("thank you page", totalAmount);
 
@@ -21,16 +22,16 @@ const ThankyouPage = () => {
   useEffect(() => {
     dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
     dataLayer.push({
-      event: "thank_you",
+      event: "purchase",
       ecommerce: {
         currency: "USD",
-        value: { productPrice },
+        value: { totalAmount },
         items: [
           {
             item_id: { productID },
             item_name: { productName },
             affiliation: { company },
-            discount: 2.22,
+            tax_amount: { taxAmount },
             price: { productPrice },
             quantity: 1,
           },

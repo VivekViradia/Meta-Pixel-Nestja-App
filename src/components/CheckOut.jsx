@@ -149,6 +149,7 @@ const CheckOut = ({ productID, productName, productPrice, company }) => {
                             productName: productName,
                             productPrice: productPrice,
                             company: company,
+                            taxAmount: taxAmount,
                           },
                         }}
                         legacyBehavior
