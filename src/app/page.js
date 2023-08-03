@@ -1,9 +1,7 @@
 'use client'
-import { MainBody, SeparaterImage, FeatureItem, DecorativeGuide, Footer } from "@/components"
 import HomePage from "@/components/HomePage"
 import { usePathname } from "next/navigation"
-import { withRouter } from "next/router"
-import Script from "next/script"
+// import { withRouter } from "next/navigation"
 import { useEffect } from "react"
 // import { useEffect } from "react"
 // import * as gtag from '../../gtm-lib/gtm'
@@ -48,9 +46,8 @@ const Home = () => {
 
   return (
     <main>
-
       <HomePage />
     </main>
   )
 }
-export default withRouter(Home);
+export default Home;
