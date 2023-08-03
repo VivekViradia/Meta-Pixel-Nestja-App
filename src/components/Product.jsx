@@ -10,7 +10,9 @@ const Product = ({ productDetails }) => {
         <form>
           <p>Product ID: {productDetails.id}</p> <hr />
           <p>Price: {productDetails.price}</p> <hr />
-          <h1>Product Name: {productDetails.productname}</h1> <hr />
+          <h1>Product Name: {productDetails.productname}</h1>
+          <h1>Company: {productDetails.company}</h1>
+          <hr />
         </form>
         <div>
           <Link
@@ -20,6 +22,7 @@ const Product = ({ productDetails }) => {
                 productID: productDetails.id,
                 productName: productDetails.productname,
                 productPrice: productDetails.price,
+                company: productDetails.company,
               },
             }}
           >
@@ -39,6 +42,7 @@ const Product = ({ productDetails }) => {
                 productID: productDetails.id,
                 productName: productDetails.productname,
                 productPrice: productDetails.price,
+                company: productDetails.company,
               },
             }}
           >

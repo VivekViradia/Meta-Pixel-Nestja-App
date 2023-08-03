@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import Link from "next/link";
 
-const WishList = ({ productID, productName, productPrice }) => {
+const WishList = ({ productID, productName, productPrice, company }) => {
   // const [product]
   const router = useRouter();
   console.log("ProductID", productID);
@@ -56,6 +56,7 @@ const WishList = ({ productID, productName, productPrice }) => {
                           productID: productID,
                           productName: productName,
                           productPrice: productPrice,
+                          company: company,
                         },
                       }}
                       legacyBehavior

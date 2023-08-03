@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const CheckOut = ({ productID, productName, productPrice }) => {
+const CheckOut = ({ productID, productName, productPrice, company }) => {
   console.log("Check Out Components", productID, productName, productPrice);
 
   const taxRate = 0.1; // 10%
@@ -145,6 +145,9 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                           pathname: `/thankyou/`,
                           query: {
                             totalAmount: totalAmount,
+                            productName: productName,
+                            productPrice: productPrice,
+                            company: company,
                           },
                         }}
                         legacyBehavior
@@ -172,9 +175,25 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                 Order Summary
               </div>
               <div className='px-[15px] py-[15px]'>
-                <dl className=''>
+                <div className=''>
                   <div className='font-[600] text-medium-text'>
-                    Products Price
+                    Products Checkout Details
+                  </div>
+                  <div className='flex items-center justify-between pt-[15px] pb-[20px]'>
+                    <dt className='text-normal-text tracking-normal'>
+                      Product Name
+                    </dt>
+                    <dd className='text-normal-text tracking-normal'>
+                      {productName}
+                    </dd>
+                  </div>
+                  <div className='flex items-center justify-between pt-[15px] pb-[20px]'>
+                    <dt className='text-normal-text tracking-normal'>
+                      Company
+                    </dt>
+                    <dd className='text-normal-text tracking-normal'>
+                      {company}
+                    </dd>
                   </div>
                   <div className='flex items-center justify-between pt-[15px] pb-[20px]'>
                     <dt className='text-normal-text tracking-normal'>
@@ -193,7 +212,7 @@ const CheckOut = ({ productID, productName, productPrice }) => {
                       ${taxAmount.toFixed(2)}
                     </dd>
                   </div>
-                </dl>
+                </div>
               </div>
               <div className='flex justify-between items-center bg-light-gray w-full text-normal-text tracking-normal pl-[15px] pr-[15px] pt-[15px] pb-[15px]'>
                 <div className='text-sub-text font-semibold tracking-normal'>

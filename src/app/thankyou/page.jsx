@@ -6,6 +6,10 @@ import { useSearchParams } from "next/navigation";
 const ThankyouPage = () => {
   const useParams = useSearchParams();
   const totalAmount = useParams.get("totalAmount");
+  const productName = useParams.get("productName");
+  const productPrice = useParams.get("productPrice");
+  const company = useParams.get("company");
+
   console.log("thank you page", totalAmount);
 
   const [showModal, setShowModal] = useState(false);

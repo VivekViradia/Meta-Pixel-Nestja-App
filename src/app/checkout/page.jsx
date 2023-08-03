@@ -8,6 +8,7 @@ const CheckoutPage = () => {
   const productID = useParams.get("productID");
   const productName = useParams.get("productName");
   const productPrice = useParams.get("productPrice");
+  const company = useParams.get("company");
   console.log(productID, productName, productPrice);
 
   return (
@@ -15,6 +16,7 @@ const CheckoutPage = () => {
       productID={productID}
       productName={productName}
       productPrice={productPrice}
+      company={company}
     />
   );
   //   return <div>Vivek Checkout</div>;
