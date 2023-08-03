@@ -5,22 +5,22 @@ import { usePathname } from "next/navigation"
 import { useEffect } from "react"
 // import { useEffect } from "react"
 // import * as gtag from '../../gtm-lib/gtm'
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-000000-01');
+// import ReactGA from 'react-ga';
+// ReactGA.initialize('UA-000000-01');
 
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.dataLayer.push({
-  //     event: 'page view',
-  //     pagePath: '/',
-  //     pageName: 'MainPage'
-  //   })
-  // }, [])
-
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    window.dataLayer.push({
+      event: 'page view',
+      pagePath: '/',
+      pageName: 'MainPage'
+    })
   }, [])
+
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, [])
 
   // useEffect(() => {
   //   const handleRouteChange = (url) => {
