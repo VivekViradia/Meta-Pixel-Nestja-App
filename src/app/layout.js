@@ -4,6 +4,9 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 const GTM_ID = 'GTM-PWWX26Z';
 const inter = Inter({ subsets: ['latin'] })
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("GTM-PWWX26Z");
 
 export const metadata = {
   title: 'Create Next App',
@@ -57,7 +60,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         /> */}
 
 
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        {/* <Script id="google-tag-manager" strategy="afterInteractive">
           {`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -65,7 +68,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','${GTM_ID}');
         `}
-        </Script>
+        </Script> */}
 
 
 
@@ -74,11 +77,12 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 
       </head>
       <body className={inter.className}>
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
           }}
-        /><Header />
+        /> */}
+        <Header />
         {children}
       </body>
     </html>

@@ -11,6 +11,7 @@ const WishListPage = () => {
   const productID = searchParams.get("productID");
   const productName = searchParams.get("productName");
   const productPrice = searchParams.get("productPrice");
+  const company = searchParams.get("company");
   console.log("productData", productID, productName, productPrice);
 
   return (
@@ -20,6 +21,7 @@ const WishListPage = () => {
           productID={productID}
           productName={productName}
           productPrice={productPrice}
+          company={company}
         />
       ) : (
         <EmptyWishList />

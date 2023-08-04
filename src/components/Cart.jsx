@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Cart = ({ productID, productName, productPrice }) => {
+const Cart = ({ productID, productName, productPrice, company }) => {
   console.log(
     "productDatadghdgh cart page",
     productID,
@@ -16,6 +16,7 @@ const Cart = ({ productID, productName, productPrice }) => {
             <tr>
               <th className='border border-gray-400 px-4 py-2'>Product ID</th>
               <th className='border border-gray-400 px-4 py-2'>Product Name</th>
+              <th className='border border-gray-400 px-4 py-2'>Company</th>
               <th className='border border-gray-400 px-4 py-2'>
                 Product Price
               </th>
@@ -27,6 +28,7 @@ const Cart = ({ productID, productName, productPrice }) => {
               <td className='border border-gray-400 px-4 py-2'>
                 {productName}
               </td>
+              <td className='border border-gray-400 px-4 py-2'>{company}</td>
               <td className='border border-gray-400 px-4 py-2'>
                 {productPrice}
               </td>
@@ -42,6 +44,7 @@ const Cart = ({ productID, productName, productPrice }) => {
               productID: productID,
               productName: productName,
               productPrice: productPrice,
+              company: company,
             },
           }}
           legacyBehavior

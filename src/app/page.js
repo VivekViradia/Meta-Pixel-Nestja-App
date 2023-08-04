@@ -1,24 +1,22 @@
 'use client'
-import { MainBody, SeparaterImage, FeatureItem, DecorativeGuide, Footer } from "@/components"
-import { useEffect } from "react"
+import HomePage from "@/components/HomePage"
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 
 export default function Home() {
+
   useEffect(() => {
-    window.dataLayer.push({
-      event: 'page view',
-      pagePath: '/',
-      pageName: 'MainPage'
-    })
-  }, [])
+    // Track a page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+    // Track a custom event
+    ReactGA.event({
+      category: 'User',
+      action: 'Logged In',
+    });
+  }, []);
 
   return (
-    <main>
-
-      <MainBody />
-      <SeparaterImage />
-      <FeatureItem />
-      <DecorativeGuide />
-      <Footer />
-    </main>
+    <HomePage />
   )
 }

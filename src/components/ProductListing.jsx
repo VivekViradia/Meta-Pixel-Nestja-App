@@ -47,6 +47,7 @@ const ProductListing = ({ productData }) => {
                                         productID: product.id,
                                         productName: product.productname,
                                         productPrice: product.price,
+                                        company: product.company,
                                       },
                                     }}
                                   >
