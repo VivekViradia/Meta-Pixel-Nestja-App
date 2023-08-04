@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import ProductListing from "@/components/ProductListing";
 import { ProductData123 } from "@/constants";
 import ReactGA from "react-ga4";
