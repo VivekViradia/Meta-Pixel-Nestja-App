@@ -2,7 +2,7 @@ import { Header } from '@/components';
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
-const GTM_ID = 'GTM-PWWX26Z';
+const GTM_ID = process.env.GTM_ID
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
